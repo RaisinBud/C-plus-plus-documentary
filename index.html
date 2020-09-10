@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+      <header id="header">C++ Documentation</header>
+       <img src="https://image.flaticon.com/icons/svg/74/74897.svg" alt="C++ logo" class="logo">
+          <ul>
+        <li class="section"><a href="#Introduction" class="nav-link">Introduction</a></li> 
+        <li class="section"><a href="#Why_Use_C_Plus_Plus" class="nav-link">Why Use C Plus Plus</a></li>
+        <li class="section"><a href="#Syntax" class="nav-link">Syntax</a></li> 
+        <li class="section"><a href="#Variables" class="nav-link">Variables</a></li>
+        <li class="section"><a href="#Basic_Data_Types" class="nav-link">Basic Data Types</a></li>
+        <li class="section"><a href="#Conditions" class="nav-link">Conditions</a></li>
+        <li class="section"><a href="#Reference" class="nav-link">Reference</a></li>
+      </ul>
+      
+    </nav>
+    
+    <main id="main-doc">
+      
+      <section id="Introduction" class="main-section">
+        <header class="section-header">Introduction</header>
+       
+            <h1>What is C++?</h1>
+          
+         <p>C++ is a cross-platform language that can be used to create high-performance applications.C++ was developed by Bjarne Stroustrup, as an extension to the C language.C++ gives programmers a high level of control over system resources and memory.</p>
+         <p>The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.</p>
+       </section>
+      
+      <section id="Why_Use_C_Plus_Plus" class="main-section">
+        <header class="section-header">Why Use C Plus Plus</header>
+        <h1>Python Can Be Used :</h1>
+        <ul>
+        <li>C++ is one of the world's most popular programming languages.</li>
+        <li>C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.</li>
+        <li>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.</li>
+        <li>C++ is portable and can be used to develop applications that can be adapted to multiple platforms.</li>
+        <li>C++ is fun and easy to learn! as C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa.</li> 
+        </ul>
+      </section>
+      
+      <section id="Syntax" class="main-section">
+        <header class="section-header">Syntax</header>
+        <p>To start using C++, you need two things:</p>
+        <ul>
+        <li>A text editor, like Notepad, to write C++ code</li>
+        <li>A compiler, like GCC, to translate the C++ code into a language that the computer will understand</li>
+        </ul>
+        <h1>Execute C++ Syntax</h1>
+        
+        <code>
+          #include &lt;iostream&gt;
+          using namespace std;
+          int main() {
+          cout &lt;&lt; "Hello World!";
+          return 0;
+          }
+        </code>
+         
+        <p>The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for some objects:</p>
+          
+        <code>
+          #include &lt;iostream&gt;
+          int main() {
+          std::cout &lt;&lt; "Hello World!";
+          return 0;
+          }
+        </code>
+          
+      </section>
+      
+      <section id="Variables" class="main-section">
+        <header class="section-header">Variables</header>
+        <p>Variables are containers for storing data values. To declare a variable, you need to know what data type it is going to be of and what its name would be. The variable name has constraints on what you can name it. Following are the rules for naming variables:</p>
+        
+        <ul>
+          <li>Variable names in C++ can range from 1 to 255 characters.</li>
+          <li>All variable names must begin with a letter of the alphabet or an underscore(_).</li>
+          <li>After the first initial letter, variable names can also contain letters and numbers.</li>
+          <li>Variable names are case sensitive.</li>
+          <li>No spaces or special characters are allowed.</li>
+          <li>You cannot use a C++ keyword (a reserved word) as a variable name.</li>
+        </ul>
+        
+        <h3>Example:</h3>
+        <p id="var">mohd Piyush abc move_name a_123 myname50 _temp j a23b9 retVal</p>
+        <br>
+        
+        <h3>Declaring (Creating) Variables</h3>
+        <p><mark>type variable = value;</mark></p>
+        <p>Where type is one of C++ types (such as int), and variable is the name of the variable (such as x or myName). The equal sign is used to assign values to the variable.</p>
+        
+        <h3>Example:</h3>
+        <p>Create a variable called myNum of type int and assign it the value 15:</p>
+        
+        <code>
+          int myNum = 15;
+          cout &lt;&lt; myNum;
+        </code>
+        
+        <p>You can also declare a variable without assigning the value, and assign the value later:</p>
+        
+        <code>
+          int myNum;
+          myNum = 15;
+          cout &lt;&lt; myNum;
+        </code>
+        
+      </section>
+      
+      <section id="Basic_Data_Types" class="main-section">
+        <header class="section-header">Basic Data Types</header>
+        <h1>Numeric Types</h1>
+        <p>Use <em>int</em> when you need to store a whole number without decimals, like 35 or 1000, and <em>float</em> or <em>double</em> when you need a floating point number (with decimals), like 9.99 or 3.14515.</p>
+        <h3><u>int</u></h3>
+           <code>
+             int myNum = 1000;
+             cout &lt;&lt; myNum;
+          </code>
+        
+        <h3><u>float</u></h3>
+          <code>
+            float myNum = 5.75;
+            cout &lt;&lt; myNum;
+          </code>
+        
+        <h3><u>double</u></h3>
+          <code>
+            double myNum = 19.99;
+            cout &lt;&lt; myNum;
+          </code>
+        
+        <h1>Boolean Types</h1>
+        <p>A boolean data type is declared with the <em>bool</em> keyword and can only take the values true or false. When the value is returned, true=1 and false=0.</p>
+        
+          <code>
+            bool isCodingFun = true;
+            bool isFishTasty = false;
+            cout &lt;&lt; isCodingFun;  <span class="clr">// Outputs 1 (true)</span>
+            cout &lt;&lt; isFishTasty;  <span class="clr">// Outputs 0 (false)</span>
+          </code>
+        
+        <h1>Character Types</h1>
+        <p>The <em>char</em> data type is used to store a single character. The character must be surrounded by single quotes, like 'A' or 'c':</p>
+          <code>
+            char myGrade = 'B';
+            cout &lt;&lt; myGrade;
+          </code>
+
+        <p>Alternatively, you can use ASCII values to display certain characters:</p>
+
+          <code>
+            char a = 65, b = 66, c = 67;
+            cout &lt;&lt; a;
+            cout &lt;&lt; b;
+            cout &lt;&lt; c;
+          </code>
+        
+        <h1>String Types</h1>
+        <p>The <em>string</em> type is used to store a sequence of characters (text). This is not a built-in type, but it behaves like one in its most basic usage. String values must be surrounded by double quotes:</p>
+
+          <code>
+            #include &lt;iostream&gt;
+            #include &lt;string&gt;
+            using namespace std;
+            int main() {
+            string greeting = "Hello";
+            cout &lt;&lt; greeting;
+            return 0;
+            } 
+          </code>
+
+        <p>To use strings, you must include an additional header file in the source code, the <em>&lt;string&gt;</em> library.</p>  
+      </section>
+      
+      <section id="Conditions" class="main-section">
+        <header class="section-header">Conditions</header>
+        <h1>C++ Conditions and If Statements</h1>
+        <p>C++ supports the usual logical conditions from mathematics:</p>
+        <ul>
+          <li>Less than: <span class="clr">a &lt; b</span></li>
+          <li>Less than or equal to: <span class="clr">a &lt;=b</span></li>
+          <li>Greater than: <span class="clr">a &gt; b</span></li>
+          <li>Greater than or equal to: <span class="clr">a &gt;=b</span></li>
+          <li>Equal to <span class="clr">a == b</span></li>
+          <li>Not Equal to: <span class="clr">a != b</span></li>
+        </ul>
+        <p>C++ has the following conditional statements:</p>
+        <ul>
+          <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+          <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+          <li>Use else if to specify a new condition to test, if the first condition is false</li>
+          <li>Use switch to specify many alternative blocks of code to be executed</li>
+        </ul>
+        
+        <h3>The if Statement</h3>
+        <p>Use the if statement to specify a block of C++ code to be executed if a condition is <em>true.</em></p>
+ 
+           <code>
+            int x = 20;
+            int y = 18;
+            if (x &gt y) {
+            cout &lt;&lt; "x is greater than y";
+            }
+          </code>
+        
+        <h3>The else Statement</h3>
+        <p>Use the else statement to specify a block of code to be executed if the condition is <em>false</em>.</p>
+
+           <code>
+            int time = 20;
+            if (time &lt; 18) {
+            cout &lt;&lt; "Good day.";
+            } else {
+            cout &lt;&lt; "Good evening.";
+            }
+          </code>
+        
+        <h3>The else if Statement</h3>
+        <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+
+           <code>
+            int time = 22;
+            if (time &lt; 10)
+            { cout &lt;&lt; "Good morning.";  }
+             else if (time &lt; 20) 
+            { cout &lt;&lt; "Good day.";  }
+             else 
+            { cout &lt;&lt; "Good evening."; }
+          </code>
+
+        </section>
+       
+      <section id="Reference" class="main-section">
+        <header class="section-header">Reference</header>
+        <p>All the documentation in this page is taken from w3schools.com. To learn C++ language visit</p><a class="footlink" href="https://www.w3schools.com/cpp/default.asp">W3Schools' C++ Tutorial.</a>
+      </section>  
+          
+     </main>
+<!-- partial -->
+  
+</body>
+</html>
